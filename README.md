@@ -80,26 +80,18 @@ realtime-chat-app/
 
 ## Screenshots
 
-Include these **key screenshots** in your repo (e.g., in a folder called `/screenshots`) and reference them in the README:
 
 1. **Chat UI** – Shows messages being sent/received.
 
-   ```markdown
-   ![Chat UI](screenshots/chat-ui.png)
-   ```
+![Chat UI](screenshots/chat-ui.png)
 
 2. **Message Logs** – Shows message history or in-memory message storage.
 
-   ```markdown
-   ![Message Logs](screenshots/message-logs.png)
-   ```
+![Message Logs](screenshots/message-logs.png)
 
 3. **Terminal / WebSocket Logs** – Shows server running and connections.
 
-   ```markdown
-   ![Server Logs](screenshots/server-logs.png)
-   ```
-
+![Server Logs](screenshots/server-logs.png)
 
 
 ## Future Enhancements
