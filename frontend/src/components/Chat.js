@@ -1,4 +1,4 @@
-// 🔄 UPDATED FILE - Remove online users tracking
+
 import React, { useState, useEffect } from "react";
 import { io } from "socket.io-client";
 import MessageList from "./MessageList";
@@ -12,7 +12,7 @@ function Chat() {
   const [isConnected, setIsConnected] = useState(false);
   const [typingUser, setTypingUser] = useState("");
   const [currentUser, setCurrentUser] = useState("");
-  // 🗑️ REMOVED - const [onlineUsers, setOnlineUsers] = useState(0);
+  
 
   useEffect(() => {
     socket.on("connect", () => {
@@ -44,10 +44,7 @@ function Chat() {
       setTimeout(() => setTypingUser(""), 2000);
     });
 
-    // 🗑️ REMOVED - Online users listener
-    // socket.on('onlineUsers', (count) => {
-    //   setOnlineUsers(count);
-    // });
+  
 
     return () => {
       socket.off("connect");
@@ -55,7 +52,7 @@ function Chat() {
       socket.off("message");
       socket.off("receiveMessage");
       socket.off("userTyping");
-      // 🗑️ REMOVED - socket.off('onlineUsers');
+      
     };
   }, []);
 
@@ -82,7 +79,7 @@ function Chat() {
           <div className="header-icon">💬</div>
           <div className="header-info">
             <h1>Real-Time Chat</h1>
-            {/* 🗑️ REMOVED - Online count display */}
+           
           </div>
         </div>
         <div className="status">
